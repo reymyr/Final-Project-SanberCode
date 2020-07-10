@@ -1,5 +1,7 @@
 .App {
   text-align: center;
+  background-color: #282c34;
+  min-height: 100vh; 
 }
 
 .App-logo {
@@ -15,17 +17,13 @@
 
 .App-header {
   background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
+  /* min-height: 100vh; */
+  /* display: flex; */
+  /* flex-direction: column; */
   align-items: center;
-  justify-content: center;
+  /* justify-content: center; */
   font-size: calc(10px + 2vmin);
   color: white;
-}
-
-.App-link {
-  color: #61dafb;
 }
 
 @keyframes App-logo-spin {
@@ -35,4 +33,72 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+.nav {
+  background-color: #282c34;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  overflow: hidden;
+}
+
+.nav-link {
+  display: block;
+  background-color: #282c34;
+  float: left;
+  text-decoration: none;
+  color: #f5f5f5;
+  padding: 10px 16px;
+  text-align: center;
+  transition: ease-in-out 200ms;
+  cursor: pointer;
+}
+
+.nav-link:hover{
+  background-color: #f5f5f5;
+  color: #282c34;
+}
+
+.nav-right {
+  float: right;
+}
+
+.clock {
+  float: right;
+  padding: 10px 16px;
+}
+
+.form-app {
+  margin-top: 15vh;
+}
+
+.ask-form {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.ask-input {
+  box-sizing: border-box;
+}
+
+.todo-app {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 15vh;
+}
+
+.listitem {
+  margin: 10px;
+}
+
+.home-text {
+  font-size: calc(10px + 3vmin);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 35vh;
 }
